@@ -30,3 +30,13 @@ custodial page component contains 8 desks displayed
 custodial page component contains desk location component
 clicking on desk link shows desk component
 
+STUDENT PAGE
+-student ID
+-student Bio
+-student history 
+-student grades
+
+DESK PAGE
+-desk ID
+-desk purchase date
+-repairs to desk
