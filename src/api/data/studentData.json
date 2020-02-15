@@ -1,0 +1,107 @@
+[
+    {
+        "id": "3b0d7462-8ba1-4a5c-8a64-7721f7a9947c",
+        "bio": {
+            "givenName": "Aisling",
+            "familyName": "Worthington",
+            "nickName": "Aisey",
+            "email": "aisey@email.me",
+            "age": 15,
+            "grade": 10
+        },
+        "history": {
+            "absences": 5,
+            "gpa": 3.7
+        },
+        "grades": {
+            "project1": 92,
+            "project2": 88,
+            "project3": 91,
+            "project4": "n/a"
+        }
+    },
+    {
+        "id": "b41c21a8-5487-4063-a976-b799d485229d",
+        "bio": {
+            "givenName": "Sommer",
+            "familyName": "Page",
+            "nickName": "Sommer",
+            "email": "sommer@email.me",
+            "age": 16,
+            "grade": 10
+        },
+        "history": {
+            "absences": 0,
+            "gpa": 3.0
+        },
+        "grades": {
+            "project1": 78,
+            "project2": 76,
+            "project3": "INC",
+            "project4": "n/a"
+        }
+    },
+    {
+        "id": "91abf0a1-717c-4123-bdcb-d5215a6ac570",
+        "bio": {
+            "givenName": "Hareem",
+            "familyName": "Vazquez",
+            "nickName": "Hareem",
+            "email": "hareem@email.me",
+            "age": 16,
+            "grade": 10
+        },
+        "history": {
+            "absences": 3,
+            "gpa": 3.4
+        },
+        "grades": {
+            "project1": 80,
+            "project2": 81,
+            "project3": 80,
+            "project4": "n/a"
+        }
+    },
+    {
+        "id": "a9ca95d8-47ba-4457-974e-679247d79a70",
+        "bio": {
+            "givenName": "Leslie",
+            "familyName": "Mccarthy",
+            "nickName": "Les",
+            "email": "leslie@email.me",
+            "age": 17,
+            "grade": 11
+        },
+        "history": {
+            "absences": 13,
+            "gpa": 2.6
+        },
+        "grades": {
+            "project1": 91,
+            "project2": 73,
+            "project3": 55,
+            "project4": "n/a"
+        }
+    },
+    {
+        "id": "c5e6ba4a-2bfc-45b8-ad2d-fdab394e8feb",
+        "bio": {
+            "givenName": "Charlie",
+            "familyName": "Guzman",
+            "nickName": "Charlie",
+            "email": "charlie@email.me",
+            "age": 17,
+            "grade": 11
+        },
+        "history": {
+            "absences": 8,
+            "gpa": 4.0
+        },
+        "grades": {
+            "project1": 100,
+            "project2": 100,
+            "project3": 100,
+            "project4": "n/a"
+        }
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "id": "3a950cd7-f347-4c17-8409-3fcc5459b13c",
+        "purchased": 1363492800000,
+        "repairs": [
+            {
+                "repairId": "df99b3dc-2a03-4187-b281-4021d4c18cb7",
+                "breakDate": 1421989200000,
+                "fixDate": 1423544400000,
+                "issueString": "Front left leg balance cup missing",
+                "fixString": "Replaced balance cup"
+            },
+            {
+                "repairId": "0981dd5b-c9a2-4a62-aa12-d2621c7c2308",
+                "breakDate": 1504756800000,
+                "fixDate": 1504929600000,
+                "issueString": "Vulgarity carved into desktop",
+                "fixString": "Puddy, painted, sanded"
+            },
+            {
+                "repairId": "3a1d47da-7bd3-45e0-9036-9500af9e6523",
+                "breakDate": 1539403200000,
+                "fixDate": 1539748800000,
+                "issueString": "Vulgarity carved into desktop",
+                "fixString": "Puddy, painted, sanded"
+            }
+        ]
+    },
+    {
+        "id": "7fd34fbf-fee9-4754-8ac9-15183394c705",
+        "purchased": 1363492800000,
+        "repairs": []
+    },
+    {
+        "id": "14f34532-ba50-42a5-99fd-162c4c79fe06",
+        "purchased": 1363492800000,
+        "repairs": [
+            {
+                "repairId": "4721f5b5-c9f5-407a-974b-4522fe40630f",
+                "breakDate": 1423544400000,
+                "fixDate": 1425013200000,
+                "issueString": "Desk beveling falling off",
+                "fixString": "Removed beveling. Sanded edges"
+            }
+        ]
+    },
+    {
+        "id": "5316cf62-3218-4a97-8c2e-8e80c9f62438",
+        "purchased": 1434945600000,
+        "repairs": []
+    },
+    {
+        "id": "a1a33b92-8b46-4e80-b8a1-5e45e8d7aa2e",
+        "purchased": 1434945600000,
+        "repairs": []
+    },
+    {
+        "id": "e8c75fe7-89ec-4178-a6e8-bddcb4afac96",
+        "purchased": 1434945600000,
+        "repairs": [
+            {
+                "repairId": "52099a66-9a2f-4f1f-9d92-cbfcd3ddac83",
+                "breakDate": 1466568000000,
+                "fixDate": 1467086400000,
+                "issueString": "Seat wobbles",
+                "fixString": "Back left leg bent. Back left leg bent back into position."
+            }
+        ]
+    },
+    {
+        "id": "a25bd008-5f78-4ae6-b2a7-6b453f2e44f6",
+        "purchased": 1434945600000,
+        "repairs": []
+    },
+    {
+        "id": "68557a9c-96cb-4a00-81f9-41318549ab2a",
+        "purchased": 1541653200000,
+        "repairs": [
+            {
+                "repairId": "5bc793e4-dd56-4944-b8c0-d0398e023d96",
+                "breakDate": 1552622400000,
+                "fixDate": 1552881600000,
+                "issueString": "Seat rattles",
+                "fixString": "Seat bolt 3L broke. Seat bolt 3L replaced"
+            }
+        ]
+    },
+    {
+        "id": "de242095-154f-44a8-8e1f-98e391838d94",
+        "purchased": 1541653200000,
+        "repairs": [
+            {
+                "repairId": "db685861-b0c8-4221-a5d6-0bda71f9a142",
+                "breakDate": 1577941200000,
+                "issueString": "Desktop fell off"
+            }
+        ]
+    },
+    {
+        "id": "d9eef97d-d043-4717-9889-dca80882767e",
+        "purchased": 1572408000000,
+        "repairs": []
+    }
+]

@@ -1,0 +1,353 @@
+[
+    {
+        "date": 1577854800000,
+        "students": [
+            {
+                "entryId": "3c03b1f4-9d31-45b1-8121-63e9cb837fae",
+                "studentId": "c5e6ba4a-2bfc-45b8-ad2d-fdab394e8feb",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            },
+            {
+                "entryId": "66aefbca-bd0c-44fc-926f-73ed035d8a24",
+                "studentId": "b41c21a8-5487-4063-a976-b799d485229d",
+                "absent": false,
+                "tardy": true,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "eeb216da-fe27-4196-8013-ef79c404300a"
+            },
+            {
+                "entryId": "cd55e8c7-bd17-4213-913c-657457246a36",
+                "studentId": "3b0d7462-8ba1-4a5c-8a64-7721f7a9947c",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "29b510df-bafc-43d9-b3d2-c0b089b51e9a"
+            },
+            {
+                "entryId": "fbe44e46-d53a-4a02-9cd4-b260d68596ce",
+                "studentId": "91abf0a1-717c-4123-bdcb-d5215a6ac570",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "041f9dce-7b1c-4c65-bc06-422c74a358c3"
+            },
+            {
+                "entryId": "27dfb237-67b1-4a62-bbb5-766258310afe",
+                "studentId": "a9ca95d8-47ba-4457-974e-679247d79a70",
+                "absent": true,
+                "tardy": false,
+                "roomId": "n/a",
+                "positionId": "n/a"
+            }
+        ],
+        "desks": [
+            {
+                "entryId": "1db69bea-96bd-4821-97be-8f09e04b1bc2",
+                "deskId": "a25bd008-5f78-4ae6-b2a7-6b453f2e44f6",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "66835c79-3eb0-4abc-b2fc-5ef2e72f13bb"
+            },
+            {
+                "entryId": "9911c907-dbfa-4a24-9135-9bb0bafbb3b8",
+                "deskId": "68557a9c-96cb-4a00-81f9-41318549ab2a",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "29b510df-bafc-43d9-b3d2-c0b089b51e9a"
+            },
+            {
+                "entryId": "2b0434f6-227f-450c-b183-b1bf10246f98",
+                "deskId": "a1a33b92-8b46-4e80-b8a1-5e45e8d7aa2e",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "041f9dce-7b1c-4c65-bc06-422c74a358c3"
+            },
+            {
+                "entryId": "0351bf24-585f-4004-b293-adde4712891d",
+                "deskId": "14f34532-ba50-42a5-99fd-162c4c79fe06",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "3670f011-ddfb-43c0-86a9-679cda2b79ae"
+            },
+            {
+                "entryId": "5965a814-d9e0-4d61-b952-9745c544ce87",
+                "deskId": "5316cf62-3218-4a97-8c2e-8e80c9f62438",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            },
+            {
+                "entryId": "98e4fd95-6378-42af-8c6a-93e7836f70ce",
+                "deskId": "7fd34fbf-fee9-4754-8ac9-15183394c705",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "7a758d63-df4c-4b86-b93a-99a9c2ad68e0"
+            },
+            {
+                "entryId": "d4aaa35b-e0e8-4298-9f98-f3571449b7a8",
+                "deskId": "de242095-154f-44a8-8e1f-98e391838d94",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "eeb216da-fe27-4196-8013-ef79c404300a"
+            },
+            {
+                "entryId": "75c02b2b-8e90-4276-9f31-7f6398abda55",
+                "deskId": "d9eef97d-d043-4717-9889-dca80882767e",
+                "status": "Standby",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "fc1799b9-fbb7-432c-939a-4294138649ad",
+                "deskId": "3a950cd7-f347-4c17-8409-3fcc5459b13c",
+                "status": "Standby",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "da3e65bd-7aee-4986-8b67-299f70b7514a",
+                "deskId": "e8c75fe7-89ec-4178-a6e8-bddcb4afac96",
+                "status": "Repaired",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            }
+        ]
+    },
+    {
+        "date": 1577941200000,
+        "students": [
+            {
+                "entryId": "76113e09-cd33-4899-bdaf-b4d81f16877c",
+                "studentId": "a9ca95d8-47ba-4457-974e-679247d79a70",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "66835c79-3eb0-4abc-b2fc-5ef2e72f13bb"
+            },
+            {
+                "entryId": "97242e8f-c824-475c-afe4-e8322f62afbd",
+                "studentId": "b41c21a8-5487-4063-a976-b799d485229d",
+                "absent": false,
+                "tardy": true,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "eeb216da-fe27-4196-8013-ef79c404300a"
+            },
+            {
+                "entryId": "6c03a648-6264-4464-9a77-538e9b6402a9",
+                "studentId": "c5e6ba4a-2bfc-45b8-ad2d-fdab394e8feb",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e64374f6-da46-42ef-a30e-a1ddfe147938"
+            },
+            {
+                "entryId": "2aeb6045-4d1f-4c78-b44a-db5e25f2ba20",
+                "studentId": "3b0d7462-8ba1-4a5c-8a64-7721f7a9947c",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "3670f011-ddfb-43c0-86a9-679cda2b79ae"
+            },
+            {
+                "entryId": "de75b99f-fb0b-4afe-898a-12c7d20d8ffd",
+                "studentId": "91abf0a1-717c-4123-bdcb-d5215a6ac570",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            }
+        ],
+        "desks": [
+            {
+                "entryId": "709c8aaa-12aa-49d6-bd91-0b2d078464e1",
+                "deskId": "a25bd008-5f78-4ae6-b2a7-6b453f2e44f6",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "66835c79-3eb0-4abc-b2fc-5ef2e72f13bb"
+            },
+            {
+                "entryId": "b64ab5c2-873a-4353-a234-25af54d89264",
+                "deskId": "68557a9c-96cb-4a00-81f9-41318549ab2a",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "29b510df-bafc-43d9-b3d2-c0b089b51e9a"
+            },
+            {
+                "entryId": "0bbe6384-0764-4cf8-b4e1-17968aa3c2c3",
+                "deskId": "e8c75fe7-89ec-4178-a6e8-bddcb4afac96",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e64374f6-da46-42ef-a30e-a1ddfe147938"
+            },
+            {
+                "entryId": "e4ce14a3-be80-488c-8f8a-74a9b6d265d8",
+                "deskId": "7fd34fbf-fee9-4754-8ac9-15183394c705",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "7a758d63-df4c-4b86-b93a-99a9c2ad68e0"
+            },
+            {
+                "entryId": "f985936e-594e-4f34-bf36-d5d50a4bc1ae",
+                "deskId": "a1a33b92-8b46-4e80-b8a1-5e45e8d7aa2e",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "041f9dce-7b1c-4c65-bc06-422c74a358c3"
+            },
+            {
+                "entryId": "d2a47483-0dd5-46b9-a2ca-462cb2422a4f",
+                "deskId": "14f34532-ba50-42a5-99fd-162c4c79fe06",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            },
+            {
+                "entryId": "007c1381-d6d6-4cfc-985a-8b3418a9fc31",
+                "deskId": "5316cf62-3218-4a97-8c2e-8e80c9f62438",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "3670f011-ddfb-43c0-86a9-679cda2b79ae"
+            },
+            {
+                "entryId": "a66c3d9c-db87-4f70-ab2f-ee86e53431ba",
+                "deskId": "3a950cd7-f347-4c17-8409-3fcc5459b13c",
+                "status": "Standby",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "930cf2ac-5ede-46ce-83b3-a1b493e1b4c8",
+                "deskId": "de242095-154f-44a8-8e1f-98e391838d94",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "eeb216da-fe27-4196-8013-ef79c404300a"
+            },
+            {
+                "entryId": "068bd441-81a8-49cb-9ed0-96e7ca0799ec",
+                "deskId": "d9eef97d-d043-4717-9889-dca80882767e",
+                "status": "Standby",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            }
+        ]
+    },
+    {
+        "date": 1578027600000,
+        "students": [
+            {
+                "entryId": "be32ab99-051c-4c93-a10c-d4278cba614d",
+                "studentId": "3b0d7462-8ba1-4a5c-8a64-7721f7a9947c",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            },
+            {
+                "entryId": "e5505dae-c276-4f67-86ef-24ed6c95a96e",
+                "studentId": "a9ca95d8-47ba-4457-974e-679247d79a70",
+                "absent": true,
+                "tardy": false,
+                "roomId": "n/a",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "93d80914-d5a1-4f72-a766-29208482e554",
+                "studentId": "91abf0a1-717c-4123-bdcb-d5215a6ac570",
+                "absent": true,
+                "tardy": false,
+                "roomId": "n/a",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "e3e79719-1ee0-489a-84cf-f9ad64b90242",
+                "studentId": "c5e6ba4a-2bfc-45b8-ad2d-fdab394e8feb",
+                "absent": false,
+                "tardy": false,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e64374f6-da46-42ef-a30e-a1ddfe147938"
+            },
+            {
+                "entryId": "6b4794f1-25e2-4e3c-842f-8312bc1eab74",
+                "studentId": "b41c21a8-5487-4063-a976-b799d485229d",
+                "absent": false,
+                "tardy": true,
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "041f9dce-7b1c-4c65-bc06-422c74a358c3"
+            }
+        ],
+        "desks": [
+            {
+                "entryId": "52b957ad-c45d-4b41-9ee6-1d9be3d7dfdd",
+                "deskId": "a25bd008-5f78-4ae6-b2a7-6b453f2e44f6",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "041f9dce-7b1c-4c65-bc06-422c74a358c3"
+            },
+            {
+                "entryId": "f119170f-3557-4255-9b58-614780141463",
+                "deskId": "a1a33b92-8b46-4e80-b8a1-5e45e8d7aa2e",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e2cd3e2b-a020-4b22-85b8-3ef195fe6e90"
+            },
+            {
+                "entryId": "ec4b8df3-fb68-4ad8-826a-d850319fc88a",
+                "deskId": "14f34532-ba50-42a5-99fd-162c4c79fe06",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "66835c79-3eb0-4abc-b2fc-5ef2e72f13bb"
+            },
+            {
+                "entryId": "8e38bf19-353a-44c3-9448-06ab40004b59",
+                "deskId": "5316cf62-3218-4a97-8c2e-8e80c9f62438",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "3670f011-ddfb-43c0-86a9-679cda2b79ae"
+            },
+            {
+                "entryId": "4594454e-9a54-415a-b3b1-d3f5cbfe634f",
+                "deskId": "e8c75fe7-89ec-4178-a6e8-bddcb4afac96",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "e64374f6-da46-42ef-a30e-a1ddfe147938"
+            },
+            {
+                "entryId": "e81339ca-d55d-48c4-b86a-45233b1f1a38",
+                "deskId": "68557a9c-96cb-4a00-81f9-41318549ab2a",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "29b510df-bafc-43d9-b3d2-c0b089b51e9a"
+            },
+            {
+                "entryId": "8d4e6bd1-d6a0-438f-be83-1ffb61f960a5",
+                "deskId": "7fd34fbf-fee9-4754-8ac9-15183394c705",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "7a758d63-df4c-4b86-b93a-99a9c2ad68e0"
+            },
+            {
+                "entryId": "c4e6ef89-f588-4761-9870-f3bdf9b5f100",
+                "deskId": "de242095-154f-44a8-8e1f-98e391838d94",
+                "status": "Repair",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            },
+            {
+                "entryId": "e8a992b0-54d9-4439-90fd-d155fbcfed89",
+                "deskId": "3a950cd7-f347-4c17-8409-3fcc5459b13c",
+                "status": "In Use",
+                "roomId": "6490847d-a3db-44ba-90eb-8832bf938e69",
+                "positionId": "eeb216da-fe27-4196-8013-ef79c404300a"
+            },
+            {
+                "entryId": "33663f2b-7349-43a2-83a5-ba63a000d30a",
+                "deskId": "d9eef97d-d043-4717-9889-dca80882767e",
+                "status": "Standby",
+                "roomId": "868e2942-eecc-4e99-b1f2-b21eca0e6f7f",
+                "positionId": "n/a"
+            }
+        ]
+    }
+]
