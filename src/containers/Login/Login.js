@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 export default function Login(props) {
   const [view, setView] = useState({ teacher: false, custodial: false });
-  const { dailyData, desk, positions, roomId } = props;
-  useEffect(() => {
-    console.log(dailyData, desk, positions, roomId);
-  });
+  const { dailyData, desk, positions, roomId, students } = props;
+  // useEffect(() => {
+  //   console.log(dailyData, desk, positions, roomId);
+  // });
   return (
     <div>
       <Button
@@ -26,10 +26,10 @@ export default function Login(props) {
       </Button>
 
       {view.teacher ? (
-        <Teacher room={{ dailyData, desk, positions, roomId }} />
+        <Teacher room={{ dailyData, desk, positions, roomId, students }} />
       ) : null}
       {view.custodial ? (
-        <Custodial room={{ dailyData, desk, positions, roomId }} />
+        <Custodial room={{ dailyData, desk, positions, roomId, students }} />
       ) : null}
     </div>
   );

@@ -1,5 +1,9 @@
 A small app that will help faculty see students and desk setups
 
+Run npm run json-server to start json server for data. 
+App starts a JSON server on port 5000 to grab data. Using mock Async await calls to bring in data. 
+
+
 Tests that need to be written:
 MAIN PAGE
 If main page Container gets displayed

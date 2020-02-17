@@ -1,6 +1,7 @@
 //create json-server for app then import into App.js
 const jsonServer  = require('json-server');
 //desk server port 5000
+const serverPort = 5000
 const deskServer = jsonServer.create();
 const deskRouter      = jsonServer.router({
   dailyData: require('./data/dailyData.json'), 
@@ -11,7 +12,7 @@ const deskRouter      = jsonServer.router({
 const middlewares = jsonServer.defaults();
 deskServer.use(middlewares);
 deskServer.use(deskRouter);
-deskServer.listen(5000, function () {
+deskServer.listen(serverPort, function () {
   console.log('running Server on port 5000/dailyData');
   console.log('running Server on port 5000/deskData');
   console.log('running Server on port 5000/roomData');
