@@ -14,7 +14,7 @@ export default function Desk(props) {
   const thisAbsent = daily.map(daily => {
     return daily.positionId === pos;
   });
-  console.log(daily, 'checking this tdaily')
+  // console.log(daily, 'checking this tdaily')
   // setStudentId(thisDaily.studentId)
   const thisStudent = students.find(student => {
     if(thisDaily){

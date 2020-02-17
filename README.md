@@ -9,7 +9,7 @@ MAIN PAGE
 If main page Container gets displayed
 if buttons on main page component gets displayed
 if buttons contain proper text on main page component 
------
+
 upon clicking on name button show dates for Teacher
 upon clicking on name button show dates for Custodial Staff
 
