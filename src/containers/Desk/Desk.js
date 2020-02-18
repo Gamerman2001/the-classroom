@@ -1,9 +1,19 @@
 //will show data for a desk
 import React, { useState } from "react";
-import './Desk.scss'
+import Student from "../Student/Student";
+import "./Desk.scss";
 
 export default function Desk(props) {
-  const { user, dailyData, desk, daily, students, roomId, pos } = props;
+  const {
+    user,
+    dailyData,
+    desk,
+    daily,
+    students,
+    roomId,
+    findStudent,
+    pos
+  } = props;
   // console.log(students, "coming from desks");
   // const [studentId, setStudentId] = useState("No Student")
   // const [student, setStudent] = useState("No Student")
@@ -16,23 +26,23 @@ export default function Desk(props) {
   });
   // console.log(daily, 'checking this tdaily')
   // setStudentId(thisDaily.studentId)
-  const thisStudent = students.find(student => {
-    if(thisDaily){
-      return thisDaily.studentId === student.id
-    }
-  })
+  const thisStudent = () => {
+    return students.find(student => {
+      if (thisDaily) {
+        return thisDaily.studentId === student.id;
+      }
+    });
+  };
 
   // console.log(studentId, "this student");
   return (
-    <div >
-      
+    <div>
       {user === "Teacher" ? (
-        <div >
+        <div>
           {thisDaily ? (
-            <div className='student-border'>
+            <div className="student-border">
               <div>Desk position {pos}</div>
-              <div>Student ID: {thisDaily.studentId}</div>
-              <div>Student Name: {thisStudent.bio.givenName}</div>
+              <Student studentId={thisDaily.studentId} student={thisStudent()} />
               {/* will have onclick that will activate the student component to show more details of the student */}
               {/* <div>Family Name: {thisStudent.bio.familyName}</div>
               <div>NickName: {thisStudent.bio.nickName}</div>
