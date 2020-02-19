@@ -15,6 +15,7 @@ export default function Desk(props) {
     day,
     roomId,
     findStudent,
+    curStudent,
     details,
     pos
   } = props;
@@ -41,13 +42,17 @@ export default function Desk(props) {
           <p>ID: {details.id}</p>
           <p>Purchased: {details.purchased}</p>
           {_.map(
-            _.map(details.repairs, n => _.toPairs(n, i => i))[0],
-            j => (<p>{`${j[0]}: ${j[1]}`}</p>)
+            _.map(details.repairs, n => _.toPairs(n)),
+          j => _.map(j, x => (<p>{`${x[0]}: ${x[1]}`}</p>))
           )}
         </Modal.Content>
       </Modal>
     );
   };
+  const studentModal =(curStudent)=> {
+    // debugger
+   return  curStudent ? <Student student={curStudent} /> : null
+  }
   const testing = details => {
     // debugger;
   };
@@ -76,11 +81,7 @@ export default function Desk(props) {
                 studentId={thisDaily.studentId}
                 student={thisStudent()}
               />
-              {/* will have onclick that will activate the student component to show more details of the student */}
-              {/* <div>Family Name: {thisStudent.bio.familyName}</div>
-              <div>NickName: {thisStudent.bio.nickName}</div>
-              <div>Absent: {thisDaily.absent.toString()}</div>
-              <div>Tardy: {thisDaily.tardy.toString()}</div> */}
+             
             </div>
           ) : null}
         </div>
@@ -89,8 +90,8 @@ export default function Desk(props) {
         <div>
           <div>Desk Position: {pos}</div>
           <div>ID: {details.id}</div>
-
           {deskModal()}
+          {studentModal(curStudent)}
         </div>
       ) : null}
     </div>

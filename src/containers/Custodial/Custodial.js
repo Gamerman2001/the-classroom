@@ -1,10 +1,11 @@
 //custodial page will show room number, 8 desk setup, custodial storage, signout , and desk information
 import React, { useEffect, useState } from "react";
 import _ from "lodash";
+import './Custodial.scss'
 import Desk from "../Desk/Desk";
 
 export default function Custodial(props) {
-  const { dailyData, desk, positions, roomId } = props.room;
+  const { dailyData, desk, positions, roomId, students } = props.room;
   const [day, setDay] = useState("Please Select a Date");
   const [daily, setDaily] = useState(["Please Select a Date"]);
   const [studentDesk, setStudentDesk] = useState(["Please Select a Date"]);
@@ -43,6 +44,12 @@ export default function Custodial(props) {
     return _.find(studentDesk, { deskId: deskId }).positionId;
   };
 
+  const studentAtDesk = (curDay, students) => {
+    return _.filter(_.find(dailyData, {'date': curDay}).students, {'absent': false})
+  }
+  const findStudent = (studentId) => {
+    return _.find(students, { id: studentId });
+  };
   const testingThing = () => {
     // todayDesk()
     // debugger
@@ -76,18 +83,26 @@ export default function Custodial(props) {
       {day !== "Please Select a Date" ? (
         <>
           <h1>Desks in Use:</h1>
+          {/* {studentAtDesk(day, students)} */}
           {deskInUse().map(curDesk => {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);
+            // debugger
+            const curStudentId = _.find(studentAtDesk(day,students), {'positionId': curPos }) === undefined ?  null :  _.find(studentAtDesk(day,students), {'positionId': curPos }).studentId 
+            const curStudent = findStudent(curStudentId)
+
             return (
-              <Desk
+              <div className='border'>
+                <Desk
                 key={curDesk.deskId}
                 user="test"
                 pos={curPos}
                 details={curDetails}
                 daily={daily}
                 desk={studentDesk}
+                curStudent={curStudent}
               />
+              </div>
             );
           })}
           <h1>Desks in Standby:</h1>
@@ -95,7 +110,8 @@ export default function Custodial(props) {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);
             return (
-              <Desk
+              <div>
+                <Desk
                 key={curDesk.deskId}
                 user="test"
                 pos={curPos}
@@ -103,6 +119,7 @@ export default function Custodial(props) {
                 daily={daily}
                 desk={studentDesk}
               />
+              </div>
             );
           })}
           <h1>Desks in Repair:</h1>
@@ -110,7 +127,8 @@ export default function Custodial(props) {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);
             return (
-              <Desk
+              <div>
+                <Desk
                 key={curDesk.deskId}
                 user="test"
                 pos={curPos}
@@ -118,27 +136,14 @@ export default function Custodial(props) {
                 daily={daily}
                 desk={studentDesk}
               />
+              </div>
+              
             );
           })}
         </>
       ) : null}
 
-      {positions.map((pos, index) => {
-        return (
-          <Desk
-            key={index}
-            user="Custodial"
-            day={day}
-            dailyData={dailyData}
-            daily={daily}
-            // students={students}
-            // findStudent={findStudent}
-            desk={studentDesk}
-            roomId={roomId}
-            pos={pos}
-          />
-        );
-      })}
+      
     </div>
   );
 }
