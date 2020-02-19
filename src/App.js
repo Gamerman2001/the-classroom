@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const [room, setRoom] = useState({
-    testing: "yes",
+    data: "no",
     roomId: null,
     positions: null,
     students: null,
-    // desks: null,
+    desk: null,
     // dates: null,
     dailyData: null
   });
@@ -53,7 +53,8 @@ function App() {
         roomId: roomData[0].roomId,
         dailyData: dailyData,
         students: studentData,
-        desk: deskData
+        desk: deskData,
+        data:'yes'
       });
     };
     fetchClassroom();
@@ -66,6 +67,8 @@ function App() {
     //   dates: null,
     //   dailyData: null
     // });
+
+
   }, []);
 
   console.log(room);

@@ -1,6 +1,7 @@
 //will show data for a desk
 import React, { useState } from "react";
 import Student from "../Student/Student";
+import _ from "lodash";
 import "./Desk.scss";
 
 export default function Desk(props) {
@@ -10,6 +11,7 @@ export default function Desk(props) {
     desk,
     daily,
     students,
+    day,
     roomId,
     findStudent,
     pos
@@ -18,9 +20,32 @@ export default function Desk(props) {
   // const [studentId, setStudentId] = useState("No Student")
   // const [student, setStudent] = useState("No Student")
   // let studentData = ''
+  // debugger
+
   const thisDaily = daily.find(daily => {
+    // debugger
     return daily.positionId === pos;
   });
+  //find the desk current to the position on this day
+  const thisDesk = desk.find(deskPos => {
+    return deskPos.deskId === pos;
+  });
+
+  //find current desks for day
+  const todayDesk = () => {
+    return _.find(dailyData, { date: day }).desks;
+  };
+
+  const deskInUse = todayDesk => {
+    return _.filter(_.find(todayDesk, { date: day }).desks, {
+      status: "In Use"
+    });
+  };
+  const deskInStandby = todayDesk => {
+    return _.filter(_.find(dailyData, { date: day }).desks, {
+      status: "Standby"
+    });
+  };
   const thisAbsent = daily.map(daily => {
     return daily.positionId === pos;
   });
@@ -33,7 +58,7 @@ export default function Desk(props) {
       }
     });
   };
-
+  // debugger
   // console.log(studentId, "this student");
   return (
     <div>
@@ -42,7 +67,10 @@ export default function Desk(props) {
           {thisDaily ? (
             <div className="student-border">
               <div>Desk position {pos}</div>
-              <Student studentId={thisDaily.studentId} student={thisStudent()} />
+              <Student
+                studentId={thisDaily.studentId}
+                student={thisStudent()}
+              />
               {/* will have onclick that will activate the student component to show more details of the student */}
               {/* <div>Family Name: {thisStudent.bio.familyName}</div>
               <div>NickName: {thisStudent.bio.nickName}</div>
@@ -50,6 +78,12 @@ export default function Desk(props) {
               <div>Tardy: {thisDaily.tardy.toString()}</div> */}
             </div>
           ) : null}
+        </div>
+      ) : null}
+      {user === "test" ? (
+        <div>
+          <div>Position: {pos}</div>
+          <div>Position: {pos}</div>
         </div>
       ) : null}
     </div>
