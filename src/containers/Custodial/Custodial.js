@@ -75,7 +75,7 @@ export default function Custodial(props) {
       <div>CURRENT DAY: {day}</div>
       {day !== "Please Select a Date" ? (
         <>
-          Desks in Use:
+          <h1>Desks in Use:</h1>
           {deskInUse().map(curDesk => {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);
@@ -90,7 +90,7 @@ export default function Custodial(props) {
               />
             );
           })}
-          Desks in Standby:
+          <h1>Desks in Standby:</h1>
           {deskInStandby().map(curDesk => {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);
@@ -105,7 +105,7 @@ export default function Custodial(props) {
               />
             );
           })}
-          Desks in Repair:
+          <h1>Desks in Repair:</h1>
           {deskInRepair().map(curDesk => {
             const curPos = deskPosition(curDesk.deskId);
             const curDetails = deskDetails(curDesk.deskId);

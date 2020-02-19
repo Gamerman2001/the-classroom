@@ -1,6 +1,7 @@
 //will show data for a desk
 import React, { useState } from "react";
 import Student from "../Student/Student";
+import { Button, Header, Icon, Modal } from "semantic-ui-react";
 import _ from "lodash";
 import "./Desk.scss";
 
@@ -14,6 +15,7 @@ export default function Desk(props) {
     day,
     roomId,
     findStudent,
+    details,
     pos
   } = props;
   // console.log(students, "coming from desks");
@@ -30,25 +32,28 @@ export default function Desk(props) {
   const thisDesk = desk.find(deskPos => {
     return deskPos.deskId === pos;
   });
+  const deskModal = () => {
+    // debugger;
+    return (
+      <Modal trigger={<Button>Desk Info</Button>} closeIcon>
+        <Header icon="archive" content="Desk Info" />
+        <Modal.Content>
+          <p>ID: {details.id}</p>
+          <p>Purchased: {details.purchased}</p>
+          {_.map(
+            _.map(details.repairs, n => _.toPairs(n, i => i))[0],
+            j => (<p>{`${j[0]}: ${j[1]}`}</p>)
+          )}
+        </Modal.Content>
+      </Modal>
+    );
+  };
+  const testing = details => {
+    // debugger;
+  };
 
   //find current desks for day
-  const todayDesk = () => {
-    return _.find(dailyData, { date: day }).desks;
-  };
 
-  const deskInUse = todayDesk => {
-    return _.filter(_.find(todayDesk, { date: day }).desks, {
-      status: "In Use"
-    });
-  };
-  const deskInStandby = todayDesk => {
-    return _.filter(_.find(dailyData, { date: day }).desks, {
-      status: "Standby"
-    });
-  };
-  const thisAbsent = daily.map(daily => {
-    return daily.positionId === pos;
-  });
   // console.log(daily, 'checking this tdaily')
   // setStudentId(thisDaily.studentId)
   const thisStudent = () => {
@@ -82,8 +87,10 @@ export default function Desk(props) {
       ) : null}
       {user === "test" ? (
         <div>
-          <div>Position: {pos}</div>
-          <div>Position: {pos}</div>
+          <div>Desk Position: {pos}</div>
+          <div>ID: {details.id}</div>
+
+          {deskModal()}
         </div>
       ) : null}
     </div>
