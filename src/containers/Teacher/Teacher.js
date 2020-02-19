@@ -5,8 +5,7 @@ import Desk from "../Desk/Desk";
 import Student from "../Student/Student";
 
 export default function Teacher(props) {
-  const { dailyData, desk, positions, roomId, students } = props.room;
-  const [absent, setAbsent] = useState([]);
+  const { dailyData, positions, roomId, students } = props.room;
   useEffect(() => {
     console.log(dailyData);
   }, []);
@@ -14,11 +13,7 @@ export default function Teacher(props) {
   const [day, setDay] = useState("Please Select a Date");
   const [daily, setDaily] = useState(["Please Select a Date"]);
   const [studentDesk, setStudentDesk] = useState(["Please Select a Date"]);
-  // const changeDay = changeDay => {
-  //   setDay(changeDay.date);
-  //   filterStudents();
-  //   console.log(day,'day')
-  // };
+ 
   //grabbing all the days and turning them into links that will be clicked on to update the current day
   const grabDays = dailyData.map(day => {
     console.log(day, "in grabdays");
@@ -105,9 +100,3 @@ export default function Teacher(props) {
   );
 }
 
-// _.filter(users, ['active', false]);
-// => objects for ['fred']
-
-// The `_.property` iteratee shorthand.
-// _.filter(users, 'active');
-// => objects for ['barney']

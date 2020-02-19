@@ -25,6 +25,7 @@ export default function Desk(props) {
   // let studentData = ''
   // debugger
 
+  //find position that is tied to daily position for student
   const thisDaily = daily.find(daily => {
     // debugger
     return daily.positionId === pos;
@@ -57,10 +58,7 @@ export default function Desk(props) {
     // debugger;
   };
 
-  //find current desks for day
-
-  // console.log(daily, 'checking this tdaily')
-  // setStudentId(thisDaily.studentId)
+ 
   const thisStudent = () => {
     return students.find(student => {
       if (thisDaily) {
@@ -68,8 +66,7 @@ export default function Desk(props) {
       }
     });
   };
-  // debugger
-  // console.log(studentId, "this student");
+  
   return (
     <div>
       {user === "Teacher" ? (
@@ -86,7 +83,7 @@ export default function Desk(props) {
           ) : null}
         </div>
       ) : null}
-      {user === "test" ? (
+      {user === "Custodial" ? (
         <div>
           <div>Desk Position: {pos}</div>
           <div>ID: {details.id}</div>

@@ -95,7 +95,7 @@ export default function Custodial(props) {
               <div className='border'>
                 <Desk
                 key={curDesk.deskId}
-                user="test"
+                user="Custodial"
                 pos={curPos}
                 details={curDetails}
                 daily={daily}
@@ -113,7 +113,7 @@ export default function Custodial(props) {
               <div>
                 <Desk
                 key={curDesk.deskId}
-                user="test"
+                user="Custodial"
                 pos={curPos}
                 details={curDetails}
                 daily={daily}
@@ -130,7 +130,7 @@ export default function Custodial(props) {
               <div>
                 <Desk
                 key={curDesk.deskId}
-                user="test"
+                user="Custodial"
                 pos={curPos}
                 details={curDetails}
                 daily={daily}

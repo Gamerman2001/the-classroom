@@ -40,12 +40,12 @@ function App() {
           return myJson.studentData;
         });
       const deskData = await fetch("http://localhost:5000/deskdata")
-      .then(response => {
-        return response.json();
-      })
-      .then(myJson => {
-        return myJson.deskData
-      });
+        .then(response => {
+          return response.json();
+        })
+        .then(myJson => {
+          return myJson.deskData;
+        });
 
       setRoom({
         ...room,
@@ -54,7 +54,7 @@ function App() {
         dailyData: dailyData,
         students: studentData,
         desk: deskData,
-        data:'yes'
+        data: room.dailyData !== null ? "yes" : "no"
       });
     };
     fetchClassroom();
@@ -67,26 +67,25 @@ function App() {
     //   dates: null,
     //   dailyData: null
     // });
-
-
   }, []);
+  const testing = params => {
+    room.dailyData !== null
+      ? console.log("NOT NUOLL!")
+      : console.log("STILL EMPTY");
+    //  debugger
+  };
 
   console.log(room);
   return (
     <div className="App">
-      <Router>
-        <Route 
-          exact
-          path='/'
-          render={ props => <Login {...room} />}
-        />
-        <Route 
-          exact
-          path='/teacher'
-          render={ props => <Login {...room} />}
-        />
-      </Router>
-      
+      {room.dailyData !== null ? (
+        <Router>
+          <Route exact path="/" render={props => <Login {...room} />} />
+          <Route exact path="/teacher" render={props => <Login {...room} />} />
+        </Router>
+      ) : (
+        <p>Please Activate Server using NPM Run Json-Server</p>
+      )}
     </div>
   );
 }
